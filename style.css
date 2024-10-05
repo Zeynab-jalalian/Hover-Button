@@ -203,7 +203,7 @@ ul li{
     padding: 30px 20px;
     text-shadow: 0 0 215px red;
     transform: scale(1.1);
-    border:1px dotted red;
+    border:1px double red;
     transition: 0.5s;
 }
 .btn5:hover{
