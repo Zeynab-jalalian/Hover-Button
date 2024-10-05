@@ -213,12 +213,14 @@ ul li{
 }
 /* btn typr 6 */
 .btn6{
-    border:1px solid #ff00aa;
+    background: rgb(255, 83, 226);
+   
 }
 .btn6 a{
-    color:#ff00aa;
+    color:white;
     font-size: 20px;
 }
 .btn6:hover{
-    -webkit-box-reflect:below 1px linear-gradient(transparent,#ff00aa);
+    box-shadow: 0 0 50px pink;
+    -webkit-box-reflect:below 3px linear-gradient(transparent,#ff00aa);
 }
