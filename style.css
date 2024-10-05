@@ -195,20 +195,23 @@ ul li{
 }
 /* btn type 5 */
 .btn5{
-    background:rgb(255, 0, 0);
+    background:rgb(255, 255, 255);
+    border:1px dotted red;
  }
  .btn5 a{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    padding: 30px 20px;
     text-shadow: 0 0 215px red;
     transform: scale(1.1);
+    border:1px dotted red;
     transition: 0.5s;
 }
 .btn5:hover{
-    background: rgba(0,0,0,0.2);
-    border:1px dotted red;
+    background: rgb(255, 0, 0);
+    border-radius: 50%;
 }
 .btn5:hover a{
-    color:rgb(255, 0, 0);
+    color:rgb(255, 255, 255);
     transform: scale(1.4);
 }
 /* btn typr 6 */
