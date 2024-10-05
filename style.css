@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    background: #262626;
+    position: relative;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    cursor: pointer;
+    margin: 10px auto;
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+ul{
+    width: 80%;
+    height: auto;
+    position: absolute;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ul li{
+    width:calc(33.3333333%);
+    height: 100px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* btn type 1 */
+.btn1{
+ background: #fff;
+ border-radius: 50px;
+ border: 2px solid #000;
+}
+.btn1 a{
+    color: #424242;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.9;
+    z-index: 10;
+    transform: scaleX(1);
+}
+.btn1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #000;
+    transition: 0.5s;
+}
+.btn1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: #000;
+    transition: 0.5s;
+}
+.btn1:hover{
+    border: 1px solid #fff;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+.btn1:hover a{
+    color: white;
+    opacity: 1;
+    transform: scaleX(1.1);
+}
+.btn1:hover:before , .btn1:hover:after{
+ width: 50%;
+}
+/* btn type 2 */
+.btn2{
+ background:pink;
+ border-radius: 50px;
+ box-shadow: 0 3px 10px rgb(255, 95, 121);
+}
+.btn2 a{
+    font-size: 19px;
+    font-weight: 400;
+    color: #ff0095;
+    z-index: 10;
+    transition: 0.3s;
+}
+.btn2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(122deg,purple,rgb(255, 64, 176),rgb(0, 255, 242),deeppink,rgb(205, 235, 135),rgb(255, 59, 222));
+    transition: 0.5s;
+}
+.btn2:hover{
+    box-shadow: 0 0px 25px rgb(255, 95, 121),
+    inset 0 0 5px rgba(255,255,255,0.3);
+}
+.btn2:hover a{
+    font-weight: 900;
+    color:rgba(151, 0, 73, 0.966);
+}
+.btn2:hover::before{
+ width: 100%;
+}
+/* btn type 3 */ 
+.btn3{
+ background:rgb(151, 239, 255);
+ border-radius: 50px;
+ z-index: 10;
+ transform: scale(1);
+}
+.btn3 a{
+    color:#1100ff;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 10;
+    transition: 0.5s;
+}
+.btn3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background:linear-gradient(45deg,blue,skyblue,rgb(0, 183, 255));
+    z-index: -1;
+    background-size: 1000%;
+    filter: blur(10px);
+    border-radius: 50px;
+    opacity: 0;
+}
+.btn3:hover{
+    transform: scale(1.1);
+}
+.btn3:hover a{
+    color: #ffffff;
+}
+.btn3:hover:before{
+    opacity: 1;
+}
+/* btn type 4 */
+.btn4{
+ background:rgb(88, 88, 88);
+}
+.btn4::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    filter: blur(1px);
+    top: -69px;
+    left: 0;
+    transition: 0.5s;
+}
+.btn4:hover::before{
+    top: 69px;
+}
+.btn4 a{
+    color: white;
+    text-shadow: 0 0 15px white;
+    transform: scale(1);
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.btn4:hover a{
+    transform: scale(1.3);
+    letter-spacing: 2px;
+}
+/* btn type 5 */
+.btn5{
+    background:rgb(255, 0, 0);
+ }
+ .btn5 a{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 215px red;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.btn5:hover{
+    background: rgba(0,0,0,0.2);
+    border:1px dotted red;
+}
+.btn5:hover a{
+    color:rgb(255, 0, 0);
+    transform: scale(1.4);
+}
+/* btn typr 6 */
+.btn6{
+    border:1px solid #ff00aa;
+}
+.btn6 a{
+    color:#ff00aa;
+    font-size: 20px;
+}
+.btn6:hover{
+    -webkit-box-reflect:below 1px linear-gradient(transparent,#ff00aa);
+}
