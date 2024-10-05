@@ -167,6 +167,8 @@ ul li{
 /* btn type 4 */
 .btn4{
  background:rgb(88, 88, 88);
+ border-radius: 10px;
+ border:1px solid black;
 }
 .btn4::before{
     content: '';
@@ -195,29 +197,33 @@ ul li{
 }
 /* btn type 5 */
 .btn5{
-    background:rgb(255, 255, 255);
-    border:1px dotted red;
+    background:transparent;
+    border:3px solid rgb(0, 162, 211);
+    box-shadow: 0 0 10px rgb(0, 238, 255);
+    border-radius: 10px;
  }
  .btn5 a{
-    color: rgb(255, 0, 0);
-    padding: 30px 20px;
-    text-shadow: 0 0 215px red;
-    transform: scale(1.1);
-    border:1px double red;
+    color: rgb(0, 195, 255);
+    text-shadow: 0 0 0.20em rgb(0, 162, 211),
+    0 0 0.30em rgb(0, 162, 211);
+    font-size: 23px;
     transition: 0.5s;
 }
 .btn5:hover{
-    background: rgb(255, 0, 0);
-    border-radius: 50%;
+    background: rgb(0, 162, 211);
+    box-shadow: 0 0 20px rgb(0, 238, 255),
+    0 0 5px white ;
 }
 .btn5:hover a{
     color:rgb(255, 255, 255);
-    transform: scale(1.4);
+    text-shadow: 0 0 0.20em white,
+    0 0 0.30em white;
 }
 /* btn typr 6 */
 .btn6{
     background: rgb(255, 83, 226);
-   
+   box-shadow: 0 0 10px palevioletred;
+   border-radius: 10px;
 }
 .btn6 a{
     color:white;
