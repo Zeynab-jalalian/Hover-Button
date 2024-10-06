@@ -129,13 +129,13 @@ ul li{
 }
 /* btn type 3 */ 
 .btn3{
- background:rgb(151, 239, 255);
+ background:rgb(255, 255, 255);
  border-radius: 50px;
  z-index: 10;
  transform: scale(1);
 }
 .btn3 a{
-    color:#1100ff;
+    color:#ff0000;
     font-weight: bold;
     font-size: 20px;
     z-index: 10;
@@ -148,7 +148,7 @@ ul li{
     left: 0;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
-    background:linear-gradient(45deg,blue,skyblue,rgb(0, 183, 255));
+    background:linear-gradient(45deg,rgb(255, 0, 0),rgb(223, 39, 39),rgb(71, 4, 4));
     z-index: -1;
     background-size: 1000%;
     filter: blur(10px);
@@ -157,6 +157,7 @@ ul li{
 }
 .btn3:hover{
     transform: scale(1.1);
+    box-shadow: 0 0 10px red;
 }
 .btn3:hover a{
     color: #ffffff;
