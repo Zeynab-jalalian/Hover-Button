@@ -222,8 +222,8 @@ ul li{
 }
 /* btn typr 6 */
 .btn6{
-    background: rgb(255, 83, 226);
-   box-shadow: 0 0 10px palevioletred;
+    background: rgb(23, 194, 0);
+   box-shadow: 0 0 10px rgb(0, 255, 13);
    border-radius: 10px;
 }
 .btn6 a{
@@ -231,33 +231,29 @@ ul li{
     font-size: 20px;
 }
 .btn6:hover{
-    box-shadow: 0 0 50px pink;
-    -webkit-box-reflect:below 3px linear-gradient(transparent,#ff00aa);
+    box-shadow: 0 0 50px rgb(108, 255, 108);
+    -webkit-box-reflect:below 3px linear-gradient(transparent,#00ff4c);
 }
 /* btn type 7*/
 .btn7{
-    border-radius: 20px;
+    background: white;
+    border:1px solid #000;
 }
 .btn7 a{
-    color: white;
+    color:black;
     font-size: 20px;
-    font-weight: 500;
-    z-index: 10;
+    z-index: 1;
 }
 .btn7::before{
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    right: -170px;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg,rgb(47, 0, 255),rgb(30, 255, 0),rgb(255, 0, 200),rgb(255, 153, 0));
-    filter: hue-rotate(0deg);
+    height: 100px;
+    background: rgb(255, 255, 0);
     transition: 0.5s;
 }
-.btn7:hover:before{
-    filter: hue-rotate(180deg);
-}
-.btn7:hover a{
-    letter-spacing: 1px;
+.btn7:hover::before{
+    right: 0;
 }
