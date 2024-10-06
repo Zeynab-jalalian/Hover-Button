@@ -233,3 +233,12 @@ ul li{
     box-shadow: 0 0 50px pink;
     -webkit-box-reflect:below 3px linear-gradient(transparent,#ff00aa);
 }
+/* btn type 7*/
+.btn7{
+    border:5px solid #fff;
+}
+.btn7 a{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
