@@ -22,6 +22,10 @@ body{
 a{
     text-decoration: none;
 }
+.container h1{
+    color: white;
+    margin:50px auto;
+}
 .btn{
     cursor: pointer;
     margin: 10px auto;
