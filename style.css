@@ -12,6 +12,7 @@
     height: 100vh;
     background: #262626;
     position: relative;
+    overflow: hidden;
 }
 a{
     text-decoration: none;
@@ -210,7 +211,7 @@ ul li{
     transition: 0.5s;
 }
 .btn5:hover{
-    background: rgb(0, 162, 211);
+    background: rgb(0, 137, 179);
     box-shadow: 0 0 20px rgb(0, 238, 255),
     0 0 5px white ;
 }
@@ -334,3 +335,29 @@ ul li{
     box-shadow: 0 0 0 rgb(218,18,18,0.5);
 }
 /* btn type 11 */
+.btn11{
+    background: #0ea063;
+    border-radius: 20px;
+}
+.btn11 a{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+.btn11:hover{
+    transform: rotate(360deg);
+}
+/* btn type 12 */
+.btn12{
+    background: rgb(175, 54, 54);
+    border-radius: 20px;
+}
+.btn12 a{
+    color:#ffffff;
+}
+.btn12:hover{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.btn:hover a{
+    letter-spacing: 1px;
+}
