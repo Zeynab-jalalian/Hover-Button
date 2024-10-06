@@ -320,3 +320,17 @@ ul li{
 .btn9:hover a{
     color: white;
 }
+/* btn type 10 */
+.btn10{
+    background: rgb(218, 18, 18);
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px rgb(218,18,18,0.5);
+}
+.btn10 a{
+    color: white;
+    font-size: 18px;
+}
+.btn10:hover{
+    box-shadow: 0 0 0 rgb(218,18,18,0.5);
+}
+/* btn type 11 */
