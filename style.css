@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 .container{
     display: flex;
     justify-content: center;
@@ -360,4 +365,13 @@ ul li{
 }
 .btn:hover a{
     letter-spacing: 1px;
+}
+
+
+
+/* responsive */
+@media (max-width:700px;){
+    ul li{
+        width: 100%;
+    }
 }
