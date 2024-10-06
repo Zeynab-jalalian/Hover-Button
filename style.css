@@ -240,9 +240,10 @@ ul li{
     border:1px solid #000;
 }
 .btn7 a{
-    color:black;
+    color:#444;
     font-size: 20px;
     z-index: 1;
+    transition: 0.5s;
 }
 .btn7::before{
     content: '';
@@ -256,4 +257,7 @@ ul li{
 }
 .btn7:hover::before{
     right: 0;
+}
+.btn7:hover a{
+    color:black;
 }
