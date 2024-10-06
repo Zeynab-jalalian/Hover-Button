@@ -236,10 +236,28 @@ ul li{
 }
 /* btn type 7*/
 .btn7{
-    border:5px solid #fff;
+    border-radius: 20px;
 }
 .btn7 a{
     color: white;
     font-size: 20px;
     font-weight: 500;
+    z-index: 10;
+}
+.btn7::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,rgb(47, 0, 255),rgb(30, 255, 0),rgb(255, 0, 200),rgb(255, 153, 0));
+    filter: hue-rotate(0deg);
+    transition: 0.5s;
+}
+.btn7:hover:before{
+    filter: hue-rotate(180deg);
+}
+.btn7:hover a{
+    letter-spacing: 1px;
 }
