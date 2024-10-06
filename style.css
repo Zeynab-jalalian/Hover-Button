@@ -261,3 +261,33 @@ ul li{
 .btn7:hover a{
     color:black;
 }
+/* btn type 8 */
+.btn8{
+    background: rgb(255, 196, 235);
+    border:1px solid #434343;
+}
+.btn8 a{
+    color:#434343;
+    font-size: 20px;
+    z-index: 1;
+    transition: 0.5s;
+}
+.btn8::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -125px;
+    width: 100%;
+    height: 100%;
+    background: rgb(92, 1, 46);
+    transition: 0.5s;
+}
+.btn8:hover{
+    border:1px solid whitesmoke;
+}
+.btn8:hover::before{
+    left: 0;
+}
+.btn8:hover a{
+    color: whitesmoke;
+}
